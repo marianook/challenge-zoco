@@ -1,12 +1,44 @@
-# React + Vite
+# React SPA - Challenge Zoco
+Aplicación SPA construida con React, Vite y TailwindCSS, con autenticación por roles y rutas protegidas. Este proyecto simula una app donde el contenido varía según el tipo de usuario.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Funcionalidades
 
-Currently, two official plugins are available:
+- Autenticación simulada con 2 tipos de usuarios:
+  - Usuario común
+  - Administrador
+- Vistas protegidas con rutas por rol
+- Gestión de sesión con `sessionStorage` y Context API
+- Estilo mobile-first, responsivo y con diseño moderno
+- Edición simulada de datos del usuario (nombre, email, estudios, direcciones)
+- Carga condicional de componentes (`AdminDashboard` o `UserDashboard` según el rol)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Credenciales de prueba
 
-## Expanding the ESLint configuration
+### 👤 Usuario común
+- **Email:** `eve.holt@reqres.in`
+- **Contraseña:** `cityslicka`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🔐 Usuario administrador
+- **Email:** `admin@correo.com`
+- **Contraseña:** `admin123`
+
+---
+
+## ❗ Aclaraciones importantes
+
+> Todos los cambios realizados en la aplicación **no persisten**. La app funciona sobre datos locales en memoria simulando una API, sin base de datos ni almacenamiento real.
+
+---
+
+## 🛠️ Instalación y ejecución local
+
+```bash
+# Clonar el repositorio
+git clone https://github.com/marianook/challenge-zoco.git
+cd challenge-zoco
+
+# Instalar dependencias
+npm install
+
+# Iniciar servidor de desarrollo
+npm run dev
