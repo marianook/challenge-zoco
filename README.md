@@ -29,8 +29,10 @@ Aplicación SPA construida con React, Vite y TailwindCSS, con autenticación por
 > Todos los cambios realizados en la aplicación **no persisten**. La app funciona sobre datos locales en memoria simulando una API, sin base de datos ni almacenamiento real.
 
 ---
+# Link del proyecto deployado:
+https://challenge-zoco.vercel.app/
 
-## 🛠️ Instalación y ejecución local
+## Instalación y ejecución local
 
 ```bash
 # Clonar el repositorio
@@ -42,3 +44,4 @@ npm install
 
 # Iniciar servidor de desarrollo
 npm run dev
+
