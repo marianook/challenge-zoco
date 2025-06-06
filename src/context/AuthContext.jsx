@@ -54,7 +54,7 @@ export const AuthProvider = ({ children }) => {
           body: JSON.stringify({ email, password }),
         });
 
-        if (!res.ok) throw new Error("Credenciales inválidas");
+        if (!res.ok) alert("Credenciales inválidas");
         const data = await res.json();
         console.log("Login exitoso:", data);
 
